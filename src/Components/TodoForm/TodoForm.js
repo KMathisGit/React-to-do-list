@@ -11,11 +11,21 @@ class TodoForm extends React.Component {
       this.refs.todoItem.focus();
   }
 
+  submitForm = (e) => {
+    e.preventDefault();
+    let item = {
+      title : this.refs.todoItem.value,
+      complete: false
+    };
+    this.addItem(item);
+    this.refs.todoItem.value = "";
+  }
+
   render() {
     return (
-      <form ref="todoForm">
+      <form ref="todoForm" onSubmit={this.submitForm}>
           <input type="text" ref="todoItem" />
-          <button type="button" onClick={() => {this.addItem({ title: this.refs.todoItem.value, complete: false })}}>Add</button>
+          <button type="submit" ref="addBtn">Add</button>
       </form>
     );
   }
