@@ -8,6 +8,11 @@
 
 .todo-list li span {
     width: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
 }
 
 .todo-list li.complete span {
