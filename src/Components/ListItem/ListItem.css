@@ -1,0 +1,46 @@
+.todo-list li {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #61dafb;
+}
+
+.todo-list li span {
+    width: 100%;
+}
+
+.todo-list li.complete span {
+    text-decoration: line-through;
+}
+
+.todo-list li:nth-child(even) {
+    background: #1c1c1c;
+}
+
+.todo-list button:hover {
+    border-color: #fff;
+    background: #bc3232;
+}
+
+.todo-list button {
+    padding: 8px 24px;
+    border: 2px solid #999;
+    background: #872222;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 0.3s all ease-out;
+    outline: none;
+    cursor: pointer;
+}
+
+.todo-list li span {
+    opacity: 0.6;
+}
+
+.todo-list li span:hover {
+    cursor: pointer;
+    opacity: 1 !important;
+}

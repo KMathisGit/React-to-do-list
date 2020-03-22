@@ -1,0 +1,10 @@
+.todo-list {
+    border: 1px solid white;
+    list-style: none;
+    padding-inline-start: 0;
+    max-height: 400px;
+    overflow: auto;
+    box-shadow: 0px 3px 18px 0px rgba(0,0,0,0.6);
+    border-radius: 3px;
+}
+
