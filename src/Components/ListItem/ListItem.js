@@ -11,10 +11,16 @@ class ListItem extends React.Component {
 
   render() {
     return (
-        <li id={"todo-item-" + this.props.index} className={this.complete ? "complete" : ""} onClick={() => { this.toggleComplete(this) }}>
-            <span>{ this.props.val.title }</span>
-            <button onClick={() => {this.removeItem(this.props.index)}}>Remove</button>
-        </li>
+      <li
+        id={`todo-item-${this.props.index}`}
+        className={this.complete ? "complete" : ""}
+        onClick={() => this.toggleComplete(this)}
+      >
+        <span>{this.props.val.title}</span>
+        <button onClick={() => this.removeItem(this.props.index)}>
+          Remove
+        </button>
+      </li>
     );
   }
 }
